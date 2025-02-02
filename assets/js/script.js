@@ -29,7 +29,7 @@ function checkGuess(color) {
     if (color === targetColor) {
         score++;
         scoreDisplay.textContent = score;
-        gameStatus.textContent = "Correct! 🎉";
+        gameStatus.textContent = "Correct! you are a genius 🎉";
         gameStatus.style.color = "green";
         setTimeout(startGame, 1000); // Automatically start a new round
     } else {
