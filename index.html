@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Guessing Game</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <div id="gamesection" data-testid="gamesection">
-    <h1>Color Guessing Game</h1>
-    <p id="gameInstructions" data-testid="gameInstructions">Guess the correct color!</p>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="gameSection" data-testid="gameSection">
 
-    <div id="colorBox" data-testid="colorBox"></div>
-    
-    <div id="colorOptions"></div>
+        <!-- Game Title -->
+      <div class="gameTitleContainer" data-testid="gameContainer">
+        <h1 id="gameTitle" data-testid="gameTitle">Color Guessing Game</h1>
+        <p id="gameInstructions" data-testid="gameInstructions">
+          Guess the correct color!
+        </p>
+      </div>
 
-    <p id="gameStatus" data-testid="gameStatus"></p>
-    <p>Score: <span id="score" data-testid="score">0</span></p>
+      <!-- Color Box -->
+      <div class="colorBoxContainer" data-testid="colorBoxContainer">
+        <div id="colorBox" data-testid="colorBox"></div>
+      </div>
 
-    <button id="newGameButton" data-testid="newGameButton">New Game</button>
+      <!-- Color Options -->
+      <div class="colorOptionsContainer" data-testid="colorOptionsContainer">
+        <div id="colorOptions" data-testid="colorOptions"></div>
+      </div>
+
+      <!-- Game Status -->
+      <div class="gameStatusContainer" data-testid="gameStatusContainer">
+        <p id="gameStatus" data-testid="gameStatus"></p>
+        <p>Score: <span id="score" data-testid="score">0</span></p>
+      </div>
+
+      <!-- New Game Button -->
+      <div class="newGameButtonContainer" data-testid="newGameButtonContainer">
+        <button id="newGameButton" data-testid="newGameButton">New Game</button>
+      </div>
     </div>
 
     <script src="assets/js/script.js"></script>
-</body>
+  </body>
 </html>
